@@ -9,10 +9,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Hero border image and styles */
 
 .image {
-    background-image: url(./pawel-czerwinski-X4PSwltIx9c-unsplash.jpg);
+    background-image: url(../assets/pawel-czerwinski-X4PSwltIx9c-unsplash.jpg);
     background-size: cover;
     margin: 0 auto;
     padding: 15px; 
