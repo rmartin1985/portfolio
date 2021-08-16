@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Hero border image and styles */
+
+.image {
+    background-image: url(./ivy.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    padding: 15px; 
+    position: relative;
+}
+
+.image img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.image p {
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    font-size: 24px;
+    font-weight: bolder;
+
+}
+/* HEADER STYLES START */
+header {
+    padding: 35px 35px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/* Header styles end */
+
+/* About Me styles start here */
+
+.about {
+    display: flex; 
+    align-content: space-between;
+    margin: 25px;
+
+}
+
+.about h2 {
+    width: 15%;
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: xxx-large;
+    padding: 10px;
+    
+}
+
+.about p {
+    display: flex;
+    width: 85%;
+    padding: 25px;
+    align-items: center;
+}
+/* About Me styles end */
+
+/* Work styles start here */
+
+.projects {
+    display: flex;
+    align-content: space-between;
+    margin: 25px;
+}
+
+.projects h2 {
+    width: 15%;
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: xxx-large;
+    padding: 10px;
+}
+
+/* Containers for my projects are here */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
+    padding: 25px;
+  }
+  
+  .flex-item {
+    width: 45%;
+    border-radius: 14px;
+    border: 4px solid #fb3e55;
+    background-color: #393b4f;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    /* for files in local images folder, use url('../images/file-name.jpg') */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    min-height: 250px;
+  }
+
+#flex-1 {
+    width: 95%;
+}
+/* Work projects styling ends */
+
+/* Contact Me styles start */
+
+.contact {
+    display: flex;
+    align-content: space-between;
+    margin: 25px;
+}
+
+.contact h2 {
+    width: 15%;
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: xxx-large;
+    padding: 10px;
+}
+/* Contact Me styles end */
