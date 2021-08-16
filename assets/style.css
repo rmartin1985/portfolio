@@ -21,7 +21,7 @@
 
 .image img {
     height: 400px;
-    width: 400px;
+    width: 425px;
     border-radius: 50%;
     position: relative;
 }
@@ -170,5 +170,24 @@ header nav ul li a:hover {
     text-align: right;
     font-size: xxx-large;
     padding: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 85%;
+}
+
+.contact-item {
+    width: 25%;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 /* Contact Me styles end */
