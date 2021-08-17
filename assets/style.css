@@ -148,7 +148,7 @@ header nav ul li a:hover {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
-    background-image: url(./Screen\ Shot\ 2021-08-16\ at\ 5.20.09\ PM.png);
+    background-image: url(../assets/Screen\ Shot\ 2021-08-16\ at\ 5.20.09\ PM.png);
     background-size: cover;
     padding: 20px 0;
     min-height: 250px;
@@ -167,12 +167,17 @@ header nav ul li a:hover {
       width: 14%;
       background-color: rgb(57, 166, 178);
       border-radius: 15px;
-      box-shadow: 10px 10px;
+      box-shadow: 10px 10px 5px;
       text-align: center;
   }
 
 #flex-1 {
     width: 95%;
+}
+
+#flex-1 a {
+    display: flex;
+    width: 100%;
 }
 
 /* Work projects styling ends */
