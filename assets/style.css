@@ -207,13 +207,13 @@ header nav ul li a:hover {
 
 .contact-item {
     width: 25%;
-    font-size: 22px;
+    font-size: 36px;
     font-weight: bold;
     padding: 20px 0;
     text-align: center;
 }
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 /* Contact Me styles end */
