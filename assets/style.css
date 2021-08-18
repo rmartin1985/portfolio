@@ -163,6 +163,10 @@ header nav ul li a:hover {
     min-height: 250px;
   }
 
+  .flex-item:hover {
+      opacity: .5;
+  }
+
   .flex-item h4 {
       position: relative;
       top: 35px;
@@ -222,6 +226,10 @@ header nav ul li a:hover {
 a {
     text-decoration: none;
     color: black;
+}
+
+#phone {
+    padding-top: 35px;
 }
 
 
