@@ -17,7 +17,7 @@ main {
 /* HEADER STYLES START */
 header {
     padding: 35px 35px;
-    background-color: #202020;
+    background-color: #000;
     display: flex;
     justify-content: space-between;
 }
@@ -70,14 +70,17 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    height: 650px;
     
 }
 
 .image img {
     height: 400px;
     width: 300px;
-    position: relative;
+    position: absolute;
     filter: grayscale(100%);
+    bottom: -90px;
+    left: 0;
     opacity: 0.6;
 
 }
@@ -144,9 +147,10 @@ header nav ul li a:hover {
     justify-content: space-around;
     width: 85%;
     padding: 25px;
+    position: relative;
   }
   
-  .flex-item {
+.flex-item {
     width: 45%;
     border-radius: 14px;
     border: 4px solid black;
@@ -157,29 +161,49 @@ header nav ul li a:hover {
     background-size: cover;
     padding: 20px 0;
     min-height: 250px;
-  }
+    position: relative;
+}
 
-  .flex-item:hover {
+.flex-item:hover {
       opacity: .5;
-  }
+}
 
-  .flex-item h4 {
-      padding: 15px;
-      width: 30%;
+.flex-item h4 {
+      padding: 10px;
+      width: 40%;
       background-color: #3F3F3F;
-      border:2px solid red;
       text-align: center;
+      font-size: 24px;
       color: #FFFFFF;
-  }
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+}
+
+.flex-item span {
+    font-size: 16px;
+}
 
 #flex-1 {
     width: 95%;
-    background-image: url(../assets/Screen\ Shot\ 2021-08-16\ at\ 5.20.09\ PM.png);
+    background-image: url(../assets/generic-runner-picture.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
-#flex-1 a {
+.flex-item a {
     display: flex;
     width: 100%;
+}
+
+#flex-2 {
+    background-image: url(../assets/robots.jpeg);
+    background-position: center;
+}
+
+#flex-5 {
+    background-image: url(../assets/rock-paper-scissors-hand-gesture-vector-25169737.jpeg);
+    background-position: center;
 }
 
 /* Work projects styling ends */
