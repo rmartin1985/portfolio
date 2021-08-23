@@ -53,7 +53,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2.00vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -248,57 +248,62 @@ a {
 
 @media screen and (max-width: 1312px) {
     .about h2, .projects h2, .contact h2 {
-       font-size: 32px;
-        
-    }
-
-    .about p {
-        font-size: 16px;
-    }
-
-    .flex-item h4 {
-        font-size: 18px;
-        width: 45%;
-    }
-
-    .flex-item h4 span {
-        font-size: 12px;
-    }
-
-    #flex-5 h4 {
-        font-size: 16px;
-    }
-
-    #phone {
-        font-size: 20px;
-    }
-    .flex-item {
-        min-height: 200px;
-        
-    }
-
-    header h1 {
-        font-size: 36px;
-    }
-
-    .image {
-        height: 435px;
-    }
-
-    .image img {
-        height: 265px;
-        width: 265px;
-    }
-    
-    .image p {
-        font-size: 16px;
-        bottom: 10px;
-    }
-
-
-}
+        font-size: 32px;
+         
+     }
+ 
+     .about p {
+         font-size: 16px;
+     }
+ 
+     .flex-item h4 {
+         font-size: 18px;
+         width: 45%;
+     }
+ 
+     .flex-item h4 span {
+         font-size: 12px;
+     }
+ 
+     #flex-5 h4 {
+         font-size: 16px;
+     }
+ 
+     #phone {
+         font-size: 20px;
+     }
+     .flex-item {
+         min-height: 200px;
+         
+     }
+ 
+     header h1 {
+         font-size: 36px;
+     }
+ 
+     .image {
+         height: 435px;
+     }
+ 
+     .image img {
+         height: 265px;
+         width: 265px;
+     }
+     
+     .image p {
+         font-size: 16px;
+         bottom: 10px;
+     }
+ 
+ 
+ }
 
 @media screen and (max-width: 992px) {
+
+    header nav ul li a {
+        font-size: 24px;
+    }
+
     .about h2, .projects h2, .contact h2 {
        font-size: 22px;
         
@@ -351,6 +356,11 @@ a {
 }
 
 @media screen and (max-width: 688px) {
+
+    header nav ul li a {
+        font-size: 2.00vw;
+    }
+
     .about, .projects, .contact {
         flex-direction: column;
         align-items: center;
