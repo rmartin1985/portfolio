@@ -7,11 +7,11 @@
 html {
     background-color: #3f3f3f;
     color:#FFFFFF;
+    scroll-behavior: smooth;
 }
 
 main {
-    font-family: Helvetica, sans-serif;
-    
+    font-family: Helvetica, sans-serif;  
 }
 
 /* HEADER STYLES START */
@@ -29,13 +29,13 @@ header {
 header h1 {
     font-size: 48px;
     font-weight: lighter;
-    color: white;
+    color: #FFFFFF;
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 header nav {
@@ -58,8 +58,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: red;
-    color: black;
+    background: #ff0000;
+    color: #000;
     border-radius: 15px;
     text-shadow: none;
 }
@@ -73,8 +73,7 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 650px;
-    
+    height: 650px;   
 }
 
 .image img {
@@ -84,7 +83,6 @@ header nav ul li a:hover {
     left: 0;
     bottom: 10px;
     filter: contrast(150%) brightness(75%) grayscale(100%);
-
 }
 
 .image p {
@@ -93,8 +91,6 @@ header nav ul li a:hover {
     bottom: 25px;
     right: 25px;
     font-size: 24px;
-    
-
 }
 /* Hero styles end */
 
@@ -103,17 +99,15 @@ header nav ul li a:hover {
 .about {
     display: flex; 
     margin: 25px;
-
 }
 
 .about h2, .projects h2, .contact h2 {
     width: 15%;
-    border-right: 5px solid black;
+    border-right: 5px solid #000;
     text-align: right;
     font-weight: lighter;
     font-size: 48px;
-    padding: 10px;
-    
+    padding: 10px;   
 }
 
 .about p {
@@ -122,6 +116,7 @@ header nav ul li a:hover {
     padding: 25px;
     align-items: center;
     line-height: 1.4;
+    font-size: 18px;
 }
 /* About Me styles end */
 
@@ -142,37 +137,36 @@ header nav ul li a:hover {
     width: 85%;
     padding: 25px;
     position: relative;
-  }
+}
   
 .flex-item {
     width: 45%;
     border-radius: 14px;
-    border: 4px solid black;
+    border: 4px solid #000;
     margin-bottom: 15px;
     background-image: url(../assets/placeimg_640_480_tech.jpg);
     background-size: cover;
-    padding: 20px 0;
     min-height: 250px;
     position: relative;
 }
 
 .flex-item:hover {
-      opacity: .5;
+    opacity: .5;
 }
 
 .flex-item h4 {
-      padding: 10px;
-      width: 40%;
-      background-color: red;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      color: #000;
-      position: absolute;
-      bottom: 10px;
-      left: 0;
-      border: 4px solid black;
-      border-left: none;
+    padding: 10px 0px;
+    width: 50%;
+    background-color: #ff0000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border: 4px solid #000;
+    border-left: none;
 }
 
 .flex-item span {
@@ -228,9 +222,9 @@ header nav ul li a:hover {
     font-size: 36px;
     font-weight: bold;
     padding: 25px;
-    text-align: center;
-   
+    text-align: center;  
 }
+
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -241,62 +235,60 @@ a {
     font-weight: lighter;
 }
 
-
 /* Contact Me styles end */
 
 /* Media queries start */
 
 @media screen and (max-width: 1312px) {
     .about h2, .projects h2, .contact h2 {
-        font-size: 32px;
-         
-     }
+        font-size: 32px;   
+    }
  
-     .about p {
-         font-size: 16px;
-     }
+    .about p {
+        font-size: 16px;
+    }
  
-     .flex-item h4 {
-         font-size: 18px;
-         width: 45%;
-     }
+    .flex-item h4 {
+        font-size: 18px;
+        width: 45%;
+    }
  
-     .flex-item h4 span {
-         font-size: 12px;
-     }
+    .flex-item h4 span {
+        font-size: 12px;
+    }
  
-     #flex-5 h4 {
-         font-size: 16px;
-     }
+    #flex-5 h4 {
+        font-size: 16px;
+    }
  
-     #phone {
-         font-size: 20px;
-     }
-     .flex-item {
-         min-height: 200px;
-         
-     }
+    #phone {
+        font-size: 20px;
+    }
+
+    .flex-item {
+        min-height: 200px;    
+    }
  
-     header h1 {
-         font-size: 36px;
-     }
+    header h1 {
+        font-size: 36px;
+    }
  
-     .image {
-         height: 435px;
-     }
+    .image {
+        height: 435px;
+    }
  
-     .image img {
-         height: 265px;
-         width: 265px;
-     }
+    .image img {
+        height: 265px;
+        width: 265px;
+    }
      
-     .image p {
-         font-size: 16px;
-         bottom: 10px;
-     }
+    .image p {
+        font-size: 16px;
+        bottom: 10px;
+    }
  
  
- }
+}
 
 @media screen and (max-width: 992px) {
 
@@ -316,6 +308,7 @@ a {
     .flex-item h4 {
         font-size: 18px;
         width: 60%;
+        padding: 0;
     }
 
     .flex-item h4 span {
@@ -357,17 +350,34 @@ a {
 
 @media screen and (max-width: 688px) {
 
+    header {
+        padding: 15px 15px;
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 36px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
     header nav ul li a {
-        font-size: 2.00vw;
+        font-size: 18px;
+    }
+
+    .image img {
+        height: 150px;
+        width: 150px;
     }
 
     .about, .projects, .contact {
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     .about h2, .projects h2, .contact h2 {
-        border-bottom: 5px solid black;
+        border-bottom: 5px solid #000;
         border-right: none;
         width: 95%;
         text-align: center;
@@ -376,10 +386,17 @@ a {
 
     .about p {
         width: 100%;
+        font-size: 12px;
     }
+
+    .flex-container {
+        width: 100%;
+    }
+
 
     .flex-item, #flex-1 {
         width: 100%;
+        min-height: 150px;
     }
 
     .contact-item {
@@ -399,7 +416,8 @@ a {
 
     .image p {
         font-size: 12px;
-        bottom: 5px;
+        top: 0;
+        left: 5px;
     }
     
 }
