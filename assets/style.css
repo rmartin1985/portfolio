@@ -27,12 +27,10 @@ header {
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: lighter;
     color: white;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -95,7 +93,7 @@ header nav ul li a:hover {
     bottom: 25px;
     right: 25px;
     font-size: 24px;
-    font-weight: bolder;
+    
 
 }
 /* Hero styles end */
@@ -104,17 +102,16 @@ header nav ul li a:hover {
 
 .about {
     display: flex; 
-    align-content: space-between;
     margin: 25px;
 
 }
 
-.about h2 {
+.about h2, .projects h2, .contact h2 {
     width: 15%;
     border-right: 5px solid black;
     text-align: right;
     font-weight: lighter;
-    font-size: xxx-large;
+    font-size: 48px;
     padding: 10px;
     
 }
@@ -134,15 +131,6 @@ header nav ul li a:hover {
     display: flex;
     align-content: space-between;
     margin: 25px;
-}
-
-.projects h2 {
-    width: 15%;
-    border-right: 5px solid black;
-    text-align: right;
-    font-weight: lighter;
-    font-size: xxx-large;
-    padding: 10px;
 }
 
 /* Containers for my projects are here */
@@ -227,19 +215,11 @@ header nav ul li a:hover {
     margin: 25px;
 }
 
-.contact h2 {
-    width: 15%;
-    border-right: 5px solid black;
-    text-align: right;
-    font-weight: lighter;
-    font-size: xxx-large;
-    padding: 10px;
-}
-
 .contact-info {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    align-items: center;
     width: 85%;
 }
 
@@ -257,10 +237,159 @@ a {
 }
 
 #phone {
-    padding-top: 35px;
     font-size: 28px;
     font-weight: lighter;
 }
 
 
 /* Contact Me styles end */
+
+/* Media queries start */
+
+@media screen and (max-width: 1312px) {
+    .about h2, .projects h2, .contact h2 {
+       font-size: 32px;
+        
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .flex-item h4 {
+        font-size: 18px;
+        width: 45%;
+    }
+
+    .flex-item h4 span {
+        font-size: 12px;
+    }
+
+    #flex-5 h4 {
+        font-size: 16px;
+    }
+
+    #phone {
+        font-size: 20px;
+    }
+    .flex-item {
+        min-height: 200px;
+        
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .image {
+        height: 435px;
+    }
+
+    .image img {
+        height: 265px;
+        width: 265px;
+    }
+    
+    .image p {
+        font-size: 16px;
+        bottom: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .about h2, .projects h2, .contact h2 {
+       font-size: 22px;
+        
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .flex-item h4 {
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .flex-item h4 span {
+        font-size: 12px;
+    }
+
+    #flex-5 h4 {
+        font-size: 16px;
+    }
+
+    #phone {
+        font-size: 16px;
+    }
+    .flex-item {
+        min-height: 175px;
+        
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .image {
+        height: 340px;
+    }
+
+    .image img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .image p {
+        font-size: 14px;
+        bottom: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 688px) {
+    .about, .projects, .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about h2, .projects h2, .contact h2 {
+        border-bottom: 5px solid black;
+        border-right: none;
+        width: 95%;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .about p {
+        width: 100%;
+    }
+
+    .flex-item, #flex-1 {
+        width: 100%;
+    }
+
+    .contact-item {
+        align-items: center;
+        width: 33%;
+
+    }
+
+    #phone {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .image {
+        height: 225px;
+    }
+
+    .image p {
+        font-size: 12px;
+        bottom: 5px;
+    }
+    
+}
