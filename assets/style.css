@@ -194,6 +194,10 @@ header nav ul li a:hover {
     background-image: url("https://media.giphy.com/media/CFpHZDO29icXviiJyO/giphy.gif?cid=790b7611d23346331742f3708cefe12002de5a246ae7d65b&rid=giphy.gif&ct=g");
 }
 
+#flex-4 {
+    background-image: url(../assets/spoiler-alert.png);
+}
+
 #flex-5 {
     background-image: url(../assets/rock-paper-scissors-hand-gesture-vector-25169737.jpeg);
     background-position: center;
